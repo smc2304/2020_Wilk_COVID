@@ -48,7 +48,7 @@ Download built count matrices from GEO (https://www.ncbi.nlm.nih.gov/geo/query/a
 Additionally, download the count matrix for patient 560 (AKA C6) from the github repository (https://github.com/ajwilk/2020_Wilk_COVID/blob/master/data/count_matrices/560_cell.counts.matrices.rds?raw=true). This patient did not consent to the sharing of sequence-level data and thus we are only able to share processed data and there is no GEO entry. 
 
 ```{r load data}
-path = "path_to_count_matrices_from_GEO"
+path = "C:/Users/smcar/intro to genomic info/Final Project/2020_Wilk_COVID/data/count_matrices/"
 cm.list = paste0(path, list.files(pattern = "*.matrices.rds", path = path))
 cm.files <- lapply(cm.list, readRDS)
 names(cm.files) <- sub(path,"",
